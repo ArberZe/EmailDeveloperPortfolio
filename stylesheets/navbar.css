@@ -1,0 +1,42 @@
+nav {
+    height: 5vh;
+    width: 100%;
+    background-color: #474747;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+nav>a {
+    text-decoration: none;
+    margin: 0 24px;
+    font-size: x-large;
+    color: white;
+    -webkit-text-stroke: .3px black;
+}
+
+.glow {
+    text-shadow: 0 0 10px #fff, 1px -1px 5px #577399;
+
+}
+
+nav>a:hover {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--border-color);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: space-evenly;
+    }
+    nav>a {
+        font-size: 16px;
+    }
+}

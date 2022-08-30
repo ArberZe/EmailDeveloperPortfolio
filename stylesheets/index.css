@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+:root {
+    --main-color: #495867;
+    --border-color: #BDD5EA;
+    --secondary-bg-color: #BDD5EA;
+    --secondary-text-color: #577399;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .subdivision-title {
+    background-color: var(--secondary-text-color);
+    color: #F7F7FF;
+    padding: 6px;
+    border-radius: 6px 6px 0 0;
+  }
+  #canvas-div {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+  }
+  #canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#canvas-div >h1 {
+  text-align: center;
+  color: white;
+  margin-top: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  outline: 1px solid slategrey;
+  border-radius: 12px;
+}
+
+@media screen and (max-width:1000px) {
+  #canvas-div {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+#my-work-div {
+    width: 100%;
+    padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .18);
+}
+
+#my-work-div>i {
+    color: var(--secondary-text-color);
+}
+
+#my-work-div h1 {
+    margin-top: 26px;
+}
+#my-work-div>div {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#my-work-cards-div {
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 34px;
+}
+
+.card {
+    max-width: 350px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    margin: 12px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    min-height: 180px;
+    height: auto;
+    transition: all .150s;
+}
+.card img:hover {
+    cursor: pointer;
+}
+.card p {
+    margin-top: 6px;
+    min-width: 100%;
+}
+
+.card-text {
+    padding: 22px 0;
+    background-color: #F7F7FF;
+}
+
+.card:hover img {
+    opacity: 0.3;
+    transition: all .150s;
+}
+
+.card i {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .150s;
+}
+.card:hover i {
+    opacity: 1;
+    transition: all .150s;
+}
+
+@media screen and (max-width:600px) {
+    #my-work-cards-div {
+        max-width: 95%;
+    }
+}

@@ -1,0 +1,81 @@
+#my-signature-div {
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#logo {
+    position: absolute;
+    height: 60%;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 4.2s;
+}
+
+#logo mask {
+    animation: fill .5s ease forwards 4.2s;
+}
+
+#logo .letter:nth-last-of-type(1){
+    stroke-dasharray: 313;
+    stroke-dashoffset: 313;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+#logo .letter:nth-last-of-type(2){
+    stroke-dasharray: 568;
+    stroke-dashoffset: 568;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+#logo .letter:nth-last-of-type(3){
+    stroke-dasharray: 267;
+    stroke-dashoffset: 267;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#logo .letter:nth-last-of-type(4){
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo .letter:nth-last-of-type(5){
+    stroke-dasharray: 269;
+    stroke-dashoffset: 269;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo .letter:nth-last-of-type(6){
+    stroke-dasharray: 267;
+    stroke-dashoffset: 267;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#logo .letter:nth-last-of-type(7){
+    stroke-dasharray: 385;
+    stroke-dashoffset: 385;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#logo .letter:nth-last-of-type(8){
+    stroke-dasharray: 269;
+    stroke-dashoffset: 269;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo .letter:nth-last-of-type(9){
+    stroke-dasharray: 865;
+    stroke-dashoffset: 865;
+    animation: line-anim 2s ease forwards;
+}
+
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: #495867;
+    }
+}

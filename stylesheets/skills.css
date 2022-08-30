@@ -1,0 +1,72 @@
+.skills-logo {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100%;
+}
+
+#skills-div {
+    width: 100%;
+    padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .18);
+}
+
+#skills-div>div {
+    width: 100%;
+    margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills-div>i {
+    color: var(--secondary-text-color);
+}
+
+#skills-div h1 {
+    margin-top: 26px;
+}
+
+.skills-logo-div,
+.work-process-logo-div {
+    text-align: center;
+    padding: 12px;
+}
+
+#skills-logos-div,
+#work-process-div {
+    min-width: 350px;
+    width: fit-content;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.skills-logo-div>p {
+    margin-top: 6px;
+}
+
+.work-process-logo-div {
+    min-width: 92px;
+    width: 30%;
+    padding: 24px;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    border-radius: 2px 18px 2px 18px;
+}
+
+.work-process-logo-div i {
+    margin-bottom: 24px;
+}
+
+#about-me-div p {
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.6em;
+    margin-top: 12px;
+}

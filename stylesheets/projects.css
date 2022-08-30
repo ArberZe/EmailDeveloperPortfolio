@@ -1,0 +1,53 @@
+#on-click-page {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#on-click-page .text {
+    text-align: center;
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#on-click-page .text p, 
+#on-click-page .text a {
+    margin: 12px 0;
+    display: block;
+}
+
+#on-click-page .text a {
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    width: fit-content;
+    padding: 12px 22px;
+    transition: all .150s;
+}
+
+#on-click-page .text a:hover, .close-btn:hover {
+    background-color: var(--border-color);
+    transition: all .150s;
+}
+
+.close-btn {
+    padding: 6px 8px;
+    border-radius: 50%;
+    margin: 24px 0;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    background-color: transparent;
+}
+.close-btn i {
+    color: var(--main-color);
+}
+
+img {
+    width: 70%;
+}
