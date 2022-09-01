@@ -22,6 +22,6 @@ footer a {
 
 @media screen and (max-width: 370px) {
     #footer-links a {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
