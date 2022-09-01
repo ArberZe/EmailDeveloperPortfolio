@@ -1,5 +1,5 @@
 footer {
-    min-height: 36vh;
+    min-height: 46vh;
     color: var(--secondary-bg-color);
     background-color: #474747;
     display: flex;
@@ -18,4 +18,10 @@ footer a {
 
 #footer-links a:hover {
     color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 370px) {
+    #footer-links a {
+        font-size: 12px;
+    }
 }
